@@ -8,6 +8,10 @@
         <!-- <link rel="icon" href="" /> -->
         <link rel="stylesheet" href="css/main.css" />
         <link rel="stylesheet" href="css/responsive.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+        <!-- aos -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="js/main.js" defer></script>
     </head>
     <body>
@@ -18,7 +22,8 @@
                 <li><a href="#visual">Home</a></li>
                 <li><a href="#work">Work</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#">contact</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#skill">Skill</a></li>
             </ul>
             <!-- 햄버거바 -->
             <div class="menu-btn">
@@ -33,7 +38,8 @@
                 <li><a href="#visual">Home</a></li>
                 <li><a href="#work">Work</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#">contact</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#skill">Skill</a></li>
             </ul>
         </div>
         <!-- 비주얼 -->
@@ -48,7 +54,7 @@
         <section class="work" id="work">
             <h2 class="title">작품 소개</h2>
             <div class="work-list">
-                <div class="work-item">
+                <div class="work-item" data-aos="fade-up">
                     <img
                         src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=1200&auto=format&fit=crop"
                         alt="img"
@@ -58,17 +64,17 @@
                         <p>브랜드 감성을 담은 광고 영상 프로젝트</p>
                     </div>
                 </div>
-                <div class="work-item">
+                <div class="work-item" data-aos="fade-up">
                     <img
                         src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop"
                         alt="img"
                     />
-                    <div class="work-text">
+                    <div class="work-text" >
                         <h3>뮤직비디오</h3>
                         <p>음악 분위기를 강조한 영상 편집 작업</p>
                     </div>
                 </div>
-                <div class="work-item">
+                <div class="work-item" data-aos="fade-up">
                     <img
                         src="https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=1200&auto=format&fit=crop"
                         alt="img"
@@ -98,5 +104,47 @@
             </div>
         </section>
         <!-- contact -->
+        <section class="contact" id="contact">
+            <h2 class="title">Contact</h2>
+            <div class="contact-link">
+                <a href="https://github.com/cgy0603?tab=repositories" title="깃허브로 이동" target="_blank"
+                    ><i class="fa-brands fa-github"></i> Github</a
+                >
+                <a href="asset/발표대본 최종.pdf" download title="이력서 다운로드"
+                    ><i class="fa-solid fa-file"></i> Resume</a
+                >
+                <a href="#" title="유튜브로 이동" target="_blank"><i class="fa-brands fa-youtube"></i> Youtube</a>
+                <a href="#" title="인스타로 이동" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            </div>
+        </section>
+        <!-- skill -->
+        <section class="skill" id="skill">
+            <h2 class="title">Skill</h2>
+            <div class="skill-list">
+                <div class="skill-item">
+                    <i class="fa-solid fa-video"></i>
+                    <h3>Premiere Pro</h3>
+                    <p>영상 편집 및 컷 편집</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-solid fa-film"></i>
+                    <h3>After Effects</h3>
+                    <p>모션 그래픽 및 효과 제작</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-solid fa-image"></i>
+                    <h3>Photoshop</h3>
+                    <p>썸네일 및 이미지 보정</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-solid fa-pen-ruler"></i>
+                    <h3>Illustrator</h3>
+                    <p>그래픽 디자인 작업</p>
+                </div>
+            </div>
+        </section>
     </body>
+    <script>
+        AOS.init();
+    </script>
 </html>
